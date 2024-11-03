@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header, footer {
+    background-color: #527be1;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-style: italic;
+}
+
+nav li {
+    display: inline-block;
+    padding: 10px;
+    margin-right: 16px;
+}
+
+nav li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+
+.container-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sobre-a-loja img {
+    margin-right: 24px;
+}
+
+section {
+    padding: 48px 0;
+    max-width: 100%; 
+    margin-right: 0 auto;
+}
+
+section h2 {
+    margin-bottom: 16px;
+    color: #527be1;
+}
+
+.lista-veiculos li {
+    list-style: none;
+    max-width: 25%;
+    margin-bottom: 24px;
+}
+
+.lista-veiculos img {
+    max-width: 100%;
+}
+
+.lista-veiculos li h3 {
+    margin: 18px 0;
+}
+
+.item-central {
+    width: 100%;
+}
+
+button {
+    display: block;
+    width: 85%;
+    padding: 6px;
+    border: none;
+    background-color: #527be1;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+footer li {
+    list-style: none;
+    display: block;
+    margin-left: 18px;
+}
+
+footer li img {
+    height: 30px;
+}
+
+.container hr {
+    border-color: #527be1;
+    margin-bottom: 50px;
+    width: 98%;
+}
+
+
+li p {
+    width: 95%;
+    margin-bottom: 8px;
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    section .container {
+        display: block;
+        width: 90%;
+    }
+
+    section {
+        padding: 50px;
+        max-width: 100%; 
+    }
+
+    .container-flex.lista-veiculos {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+
+    .container {
+        justify-content: space-around;
+        width: 100%;
+    }
+
+
+    header, footer {
+        padding: 10px;
+
+    }
+
+    .lista-veiculos li ,h3, p{
+        margin: px ;
+        text-align: center;
+    }
+
+    .lista-veiculos li {
+        list-style: none;
+        max-width: 100%;
+        margin-bottom: 24px;
+    }
+
+    button {
+        display: block;
+        width: 90%;
+        max-width: 300px; /* Limite máximo */
+        margin: 10px auto; /* Centralizar o botão */
+        font-size: 16px;
+    }
+    
+
+    .sobre-a-loja img {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .container-flex.lista-veiculos img { 
+        padding: 20px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+    section .container {
+        display: block;
+        width: 90%;
+    
+    }
+    
+    header, footer {
+        padding: 5px 0;
+    }
+
+    header li a{
+        display: grid;
+        text-align: center;
+        font-style: italic;
+    }
+    
+    nav li {
+        padding: 10px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    section {
+        padding: 15px 0;
+    }
+    
+    section h2 {
+        margin-bottom: 16px;
+        color: #527be1;
+    }
+    
+    .lista-veiculos li {
+        list-style: none;
+        margin-bottom: 24px;
+    }
+    
+    .lista-veiculos img {
+        width: 100%;
+    }
+    
+    .lista-veiculos li h3 {
+        margin: 18px 0;
+    }
+    
+    button {
+        display: block;
+        width: 100%;
+        padding: 6px;
+        border: none;
+        background-color: #527be1;
+        color: #fff;
+        font-size: 14px;
+        font-weight: bold;
+        font-style: italic;
+        cursor: pointer;
+        border-radius: 3px;
+        margin-top: 10px;
+    }
+
+    
+    footer li img {
+        height: 25px;
+    }
+
+    footer p {
+        margin-right: 15px;
+        font-size: 15px;
+    }
+    
+    .container hr {
+        border-color: #527be1;
+        margin-bottom: 50px;
+        width: 100%;
+    }
+    
+    
+    li p, h3{
+        text-align: center;
+        width:100%;
+        margin-bottom: 8px;
+    }
+
+    .sobre-a-loja img {
+        width: 100%;
+        margin-bottom: 30px;
+
+    }
+
+    .container-flex.lista-veiculos {
+        display: grid;
+        justify-content: space-evenly;
+        width: 100%;
+        grid-template-columns: 400%;
+    }
+}
